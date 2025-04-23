@@ -187,7 +187,7 @@ int main(int argc, char *argv[])
 
     if (strcmp(mode_choice, "1") == 0)
     {
-      PORT = 2865;
+      PORT = 2864;
       connection_mode = 0; // Local
       printf("\e[1;32mConnecting to local server...\e[0m\n");
     }
@@ -283,10 +283,11 @@ int main(int argc, char *argv[])
   {
     printf("\e[1;31mConnection failed after %d attempts!\e[0m\n", max_retries);
     printf("\e[1;33mPlease make sure the server is running:\e[0m\n");
-    printf("1. For local mode: Run the C server (./s.out)\n");
+    printf("1. For local mode: Run the Node.js server\n");
     printf("2. For online mode: Run the Node.js server\n");
     printf("   - cd node\n");
     printf("   - node index.js\n");
+    printf("   - or use: npm run start\n");
     exit(1);
   }
 
