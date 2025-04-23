@@ -166,3 +166,9 @@ const server = net.createServer((socket) => {
 server.listen(PORT, () => {
   console.log(`\n\x1b[1mSimple TCP Chat Server Running on port ${PORT}\x1b[0m\n`);
 });
+
+// Log server address information
+server.on('listening', () => {
+  const address = server.address();
+  console.log(`Server listening on ${address.address}:${address.port}`);
+});
