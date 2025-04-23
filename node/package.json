@@ -1,0 +1,19 @@
+{
+  "name": "tcp-chat-node",
+  "version": "1.0.0",
+  "description": "Node.js implementation of a multi-room chat server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-tcp": "node tcp-server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "ISC"
+}
